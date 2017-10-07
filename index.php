@@ -35,7 +35,10 @@
                         echo "The factorial of 0 is 1.";
                     }
                     if ($number < 0) {
-                        echo "Please enter a positive whole number.";
+                        echo "Please enter a positive whole number. <br>Try again.";
+                    }
+                    if ($number > 30) {
+                        echo "Please enter a number that is not more than 30.<br>Try again.";
                     }
                     if ($number > 0 && $number < 31) {
                     // Initialize result  
@@ -52,7 +55,7 @@
                        }
                 } else {
                     // The number must be between 1 and 30.
-                    echo "<p>Please enter a number that is a minimum of 1 and maximum of 100.</p>";
+                    echo "<p>Please enter a number that is a minimum of 1 and maximum of 30.</p>";
                     echo "<p>Thank you.</p>";
                 }
                 }
